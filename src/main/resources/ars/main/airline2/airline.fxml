@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ars.main.airline2.application.AirlineController">
+    <children>
+        <Text fontSmoothingType="LCD" layoutX="119.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Ticket" textAlignment="CENTER" wrappingWidth="149.0">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Text>
+        <TextField fx:id="author" layoutX="30.0" layoutY="98.0" promptText="passenger Id" />
+        <TextField fx:id="book" layoutX="30.0" layoutY="143.0" promptText="From" />
+        <TextField fx:id="isbn" layoutX="193.0" layoutY="143.0" promptText="  To" />
+        <TextField fx:id="category" layoutX="193.0" layoutY="98.0" promptText="Class" />
+        <Button layoutX="145.0" layoutY="200.0" mnemonicParsing="false" onAction="#addItem" style="-fx-background-color: black;" text=" Book" textFill="#f8f7f7">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <ListView fx:id="booksList" layoutX="359.0" layoutY="162.0" prefHeight="335.0" prefWidth="596.0" stylesheets="@listview.css" />
+        <Text layoutX="359.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="265.0">
+            <font>
+                <Font name="System Bold" size="19.0" />
+            </font>
+        </Text>
+        <TextField fx:id="search" layoutX="362.0" layoutY="50.0" onKeyTyped="#searchBook" prefHeight="31.0" prefWidth="590.0" promptText="Search id..." />
+        <Button fx:id="edit" layoutX="796.0" layoutY="504.0" mnemonicParsing="false" onAction="#editBook" prefHeight="31.0" prefWidth="63.0" style="-fx-background-color: black;" text="Edit" textFill="#f2efef">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Button fx:id="delete" layoutX="874.0" layoutY="503.0" mnemonicParsing="false" onAction="#deleteBook" prefHeight="31.0" prefWidth="73.0" style="-fx-background-color: black;" text="Delete" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="142.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="30.0" layoutY="339.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="369.0" layoutY="105.0" prefHeight="31.0" prefWidth="239.0" style="-fx-background-color: black;" text="     Passenger id;From;To;Class;" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+    </children>
+</AnchorPane>

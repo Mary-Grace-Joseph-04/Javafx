@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="750.0" prefWidth="750.0" spacing="20.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ars.main.airline2.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <ImageView fitHeight="298.0" fitWidth="407.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../../java/image/im.jpg" />
+      </image>
+   </ImageView>
+   <Label prefHeight="53.0" prefWidth="399.0" style="-fx-background-color: black;" text="  Airline Reservation System" textFill="#fff7f7">
+      <font>
+         <Font name="System Bold" size="29.0" />
+      </font>
+   </Label>
+
+    <Label prefHeight="80.0" prefWidth="224.0" style="-fx-background-color: black;" text="  Welcome, Passenger!" textAlignment="CENTER" textFill="#fffdfd">
+        <font>
+            <Font name="System Bold" size="20.0" />
+        </font>
+    </Label>
+
+    <Button mnemonicParsing="false" onAction="#onStartButtonClick" style="-fx-background-color: black;" text="Start app" textFill="#fcf9f9">
+        <font>
+            <Font name="System Bold" size="15.0" />
+        </font>
+    </Button>
+</VBox>
